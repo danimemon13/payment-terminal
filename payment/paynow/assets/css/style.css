@@ -1,0 +1,169 @@
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a:focus {
+	text-decoration: none;color:#34a853;
+}
+
+
+.mt-3 {
+    margin-top: 2rem!important;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  background: #f7f7f7;
+}
+.index-wrap{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1230px;
+    background: #fff;
+    padding: 30px;
+}
+.sec-1{
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.sec-1 .pg-top{
+  text-align: center;
+}
+.sec-1 .pg-top .title{
+  font-size: 48px;
+  line-height: 1;
+  color: #34a853;    text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.sec-1 .pg-top .sub-title{
+  font-size: 27px;
+  line-height: 1;
+  color: #282828;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+}
+.sec-1 .pg-top .sub-title:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #34a853;
+}
+.payment-form .g-title {
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 700;
+    color: #111111;
+    margin: 20px 0 21px 0;
+}
+.payment-form .form-group{
+  margin-bottom: 15px;
+}
+.payment-form .form-group label{
+  font-weight: 500;
+  font-size: 15px;
+  color: #201f1f;
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.payment-form .form-group input,
+.payment-form .form-group select{
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border: 1px solid #989898;
+  border-radius: 10px;
+  padding: 5px 15px;
+  outline: none;
+  box-shadow: none;
+}
+.payment-form .form-group.radio-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+.payment-form .form-group.radio-group div{
+  margin: 0 10px 5px 0;
+}
+.payment-form .form-group.radio-group label{
+  display: inline-block;
+}
+.payment-form .form-group.radio-group label.d-block{
+  display: block;
+  width: 100%;
+}
+.payment-form .form-group.radio-group input{
+  width: 13px;
+  height: 13px;
+  border-radius: 100%; 
+  margin-right: 5px;
+}
+.payment-form .form-group .card-info{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.payment-form .form-group .card-info input{
+  border: none;
+  padding: 0 5px;
+  height: 100%;
+}
+.payment-form .form-group .card-info .number{
+  width: 75%;
+}
+.payment-form .form-group .card-info .date{
+  width: 15%;
+}
+.payment-form .form-group .card-info .cvv{
+  width: 10%;
+}
+.payment-form .form-group.check-group{
+  padding-top: 47px;
+}
+.payment-form .form-group.check-group input{
+  margin-top: 3px;
+  margin-right: 15px;
+}
+.payment-form .submit{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: -moz-linear-gradient(90deg, rgb(69 187 100) 0%, rgb(34 144 63) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(69 187 100) 0%, rgb(34 144 63) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(69 187 100) 0%, rgb(34 144 63) 100%);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon div{
+  padding: 30px;
+}

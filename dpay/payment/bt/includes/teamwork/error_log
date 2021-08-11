@@ -1,0 +1,30 @@
+[21-Nov-2015 23:59:58 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Rest\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Account.php on line 4
+[22-Nov-2015 00:03:32 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Rest\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Account.php on line 4
+[22-Nov-2015 00:04:11 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Rest\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Account.php on line 4
+[22-Nov-2015 00:05:20 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Rest\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Account.php on line 4
+[22-Nov-2015 00:07:30 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Response\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Response/JSON.php on line 7
+[22-Nov-2015 00:08:58 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Response\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Response/JSON.php on line 7
+[22-Nov-2015 00:15:06 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Response\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Response/JSON.php on line 7
+[22-Nov-2015 00:15:12 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Response\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Response/JSON.php on line 7
+[22-Nov-2015 00:15:16 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Response\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Response/JSON.php on line 7
+[22-Nov-2015 00:16:12 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Request\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Request/JSON.php on line 6
+[22-Nov-2015 00:17:15 America/Chicago] PHP Warning:  require(/home/octapay/public_html/pg/TeamWork/src/Messge/Reply.php): failed to open stream: No such file or directory in /home/octapay/public_html/pg/TeamWork/teamwork.php on line 18
+[22-Nov-2015 00:17:15 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/octapay/public_html/pg/TeamWork/src/Messge/Reply.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/octapay/public_html/pg/TeamWork/teamwork.php on line 18
+[22-Nov-2015 00:18:44 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Message/Reply.php on line 4
+[22-Nov-2015 00:19:45 America/Chicago] PHP Fatal error:  Class 'TeamWorkPm\Comment\Model' not found in /home/octapay/public_html/pg/TeamWork/src/Comment/File.php on line 4
+[22-Nov-2015 00:20:21 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 00:20:21 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 00:21:24 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 00:21:24 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 00:22:21 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 00:22:21 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 01:43:13 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 01:43:13 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 01:43:19 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 01:43:19 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 01:45:43 America/Chicago] PHP Warning:  forward_static_call_array() expects parameter 1 to be a valid callback, class '.\TeamWorkPm\Account' not found in /home/octapay/public_html/pg/TeamWork/src/Factory.php on line 23
+[22-Nov-2015 01:45:43 America/Chicago] PHP Fatal error:  Call to a member function authenticate() on a non-object in /home/octapay/public_html/pg/TeamWork/src/Auth.php on line 18
+[22-Nov-2015 08:27:06 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ']' in /home/octapay/public_html/pg/TeamWork/teamwork.php on line 131
+[22-Nov-2015 09:29:21 America/Chicago] PHP Parse error:  syntax error, unexpected '$fname' (T_VARIABLE), expecting ',' or ';' in /home/octapay/public_html/pg/TeamWork/teamwork.php on line 125
+[22-Nov-2015 19:40:22 America/Chicago] PHP Parse error:  syntax error, unexpected '?>', expecting catch (T_CATCH) in /home/octapay/public_html/pg/paynow/includes/teamwork/teamwork.php on line 215
+[22-Nov-2015 19:42:20 America/Chicago] PHP Parse error:  syntax error, unexpected '?>', expecting catch (T_CATCH) in /home/octapay/public_html/pg/paynow/includes/teamwork/teamwork.php on line 216

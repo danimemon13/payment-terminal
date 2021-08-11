@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "recharge"
+AuthUserFile "/home/octapay/.htpasswds/public_html/pg/recharge/passwd"
+require valid-user

@@ -1,0 +1,9 @@
+[23-Nov-2015 22:06:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Braintree_Exception_Authentication' in /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/braintree/lib/Braintree/Util.php:59
+Stack trace:
+#0 /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/braintree/lib/Braintree/Http.php(31): Braintree_Util::throwStatusCodeException(401)
+#1 /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/braintree/lib/Braintree/Plan.php(6): Braintree_Http::get('/plans')
+#2 /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/config.php(121): Braintree_Plan::all()
+#3 /home/octapay/public_html/pg/zip/braintree-payment-terminal/index.php(16): require('/home/octapay/p...')
+#4 {main}
+  thrown in /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/braintree/lib/Braintree/Util.php on line 59
+[23-Nov-2015 23:32:41 America/Chicago] PHP Strict Standards:  mktime(): You should be using the time() function instead in /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/form.processing.php on line 111

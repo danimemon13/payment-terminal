@@ -1,0 +1,393 @@
+<!doctype html>
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>BrainTree Payment Terminal v1.0 - quick and easy credit card payment terminal through BrainTree API (and optional paypal payments standard!)</title>
+
+    <meta name="description" content="Thank you for purchasing our product.">
+    <meta name="author" content="Convergine.com">
+    <meta name="copyright" content="Convergine.com">
+    <meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+    <meta name="date" content="2012-06-28T00:00:00+02:00">
+
+    <link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <script src="js/jquery.1.6.4.js"></script>
+
+    <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+
+    <script>document.createElement('section');
+    var duration = 500, easing = 'swing';</script>
+    <script src="js/script.js"></script>
+
+    <style>
+        html {
+            background-color: #EEEEEE;
+            color: #383838;
+        }
+
+        ::-moz-selection {
+            background: #333636;
+            color: #00DFFC;
+        }
+
+        ::selection {
+            background: #333636;
+            color: #00DFFC;
+        }
+
+        #documenter_sidebar #documenter_logo {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0 0 30px;
+            padding-bottom: 0;
+        }
+
+        a {
+            color: #008C9E;
+        }
+
+        hr {
+            border-top: 1px solid #D4D4D4;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        #documenter_sidebar, #documenter_sidebar ol a {
+            background-color: #343838;
+            color: #FFFFFF;
+        }
+
+        #documenter_sidebar ol a {
+            -webkit-text-shadow: 1px 1px 0px #494F4F;
+            -moz-text-shadow: 1px 1px 0px #494F4F;
+            text-shadow: 1px 1px 0px #494F4F;
+        }
+
+        #documenter_sidebar ol {
+            border-top: 1px solid #212424;
+        }
+
+        #documenter_sidebar ol a {
+            border-top: 1px solid #494F4F;
+            border-bottom: 1px solid #212424;
+            color: #FFFFFF;
+        }
+
+        #documenter_sidebar ol a:hover {
+            background: #333636;
+            color: #00DFFC;
+            border-top: 1px solid #333636;
+        }
+
+        #documenter_sidebar ol a.current {
+            background: #333636;
+            color: #00DFFC;
+            border-top: 1px solid #333636;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+    </style>
+
+</head>
+<body>
+<div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo">Convergine</a>
+    <ol id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#bugs_issues">Bugs & Issues</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#fresh_installation">Fresh Installation</a></li>
+        <li><a href="#configfile">Configuration File Variables</a></li>
+        <li><a href="#paypal">PayPal Settings</a></li>
+        <li><a href="#yourdb">Connect to your DB</a></li>
+        <li><a href="#live">Going LIVE or testing?</a></li>
+
+        <li><a href="#need_support">Need Support ?</a></li>
+
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+    </ol>
+    <div id="documenter_copyright">Copyright Convergine.com 2012<br>
+        made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+    </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover"><h1>BrainTree Payment Terminal v1.0</h1>
+
+    <h2>quick & easy credit card payments with BrainTree Payments API and optional PayPal payments</h2>
+    <hr>
+    <ul>
+        <li>Created: 16 February 2012</li>
+
+        <li>By: Convergine.com</li>
+    </ul>
+    <p>Thank you for purchasing our product. If you have any questions that are beyond the scope of this help file,
+        please go to our support forums - http://support.convergine.com. Thanks for purchasing!</p></section>
+<section id="introduction">
+    <h3>Introduction</h3>
+    <hr class="notop">
+    <p>
+        Our script allows you to have a quick & easy payment terminal for your clients to pay with major credit cards
+        (Visa, Master Card, American Express, Discover) on your website (without leaving it), as well as paypal payments through paypal gateway.
+        Installation and configuration of the script takes less than 5 minutes (however you do need to have SSL and BrainTree Payments
+        account).
+        There are 3 options to pay: 1) customers can *input price themselves* and type description, 2) you can turn on
+        *pre-defined services* and customers will select service from dropdown and 3) customers can select *recurring
+        services from dropdown*</p>
+    <p>Optionally PayPal Website Payments Standard can be enabled/disabled for both one time PayPal payments and recurring PayPal payments.</p>
+
+    <div>
+        &nbsp;</div>
+</section>
+<section id="bugs_issues">
+    <h3>Bugs & Issues</h3>
+    <hr class="notop">
+    <p>
+        As always, if you find any bugs in the product- <strong>please post information about it on our support forums&nbsp;</strong><a
+            href="http://support.convergine.com ">http://support.convergine.com&nbsp;</a></p>
+
+    <p>
+        We try to accommodate any bug fixes as soon as possible, ahead of any other products we develop at the
+        moment.</p>
+</section>
+<section id="requirements">
+    <h3>Requirements</h3>
+    <hr class="notop">
+    <p>
+        1) PHP 5.0+</p>
+
+    <p>
+        2) cURL must be enabled to accept payments (contact your hosting provider if unsure).</p>
+
+</section>
+<section id="fresh_installation">
+    <h3>Fresh Installation</h3>
+    <hr class="notop">
+    <p>
+        Fresh installation is pretty simple.&nbsp;</p>
+
+    <p>
+        1) Unzip the contents of the file which you downloaded from codecanyon.net.<br>
+        You will find 2 folders: &quot;braintree-payment-terminal&quot; and &quot;documentation&quot;</p>
+
+    <p>2) open braintree-payment-terminal/includes/config.php and edit all needed variables (see explanation below)</p>
+
+    <p>
+        3) Upload &quot;braintree-payment-terminal&quot; folder to your FTP server.&nbsp;</p>
+
+
+</section>
+
+
+<section id="configfile">
+    <h3>Configuration File Variables</h3>
+    <hr class="notop">
+    <p>
+        below you will find all editable variables from includes/config.php and their meaning.&nbsp;</p>
+
+    <p>
+        <strong>Line 29</strong> - global page meta title<br/>
+        <strong>Line 31</strong> - notification email address where you want to receive "new payment received" emails.
+        (can be multiple emails, comma separated)<br/>
+        <strong>Line 34 through 39</strong> - non-recurring services array. You can add more by copy/pasting line 33
+        below it.<br/>
+        <strong>Line 43</strong> - if set to true services dropdown will be available on payment page for selection, if
+        false - fillable amount box will appear<br/>
+        <strong>Line 46</strong> - Payment type switch, can be ONETIME or RECUR. If set to ONETIME - payment terminal
+        will charge customers single transaction. If set to RECUR - recurring services dropdown will appear instead of
+        amount input box/services dropdown.<br/>
+        <strong>Line 60</strong> - Recurring services array. Please note that you have to create recurring plans in braintree
+        account. All created recurring plans  will show up in services dropdown by default - if paymnet type is set to "RECUR".
+        If you want to show particular services you need to insert their id's in this array like so: $recur_services = array('id_plan_1_that_I_want_to_display','id_plan_2')<br/>
+        <strong>Line 63</strong> - Live/Sandbox indicator. If set to false - you will be using TEST environment, setting
+        this to true will enable LIVE mode.<br/>
+        <strong>Line 66</strong> - HTTPS redirection, in case your customers landed on a non-https page. Set this to TRUE if going live.<br />
+        <strong>Line 69 through 72</strong> - Test environment api credentials (sandbox account required. You can get one at https://www.braintreepayments.com/get-started )<br/>
+        <strong>Line 76 through 79</strong> - Live environment api credentials (Merchant ID, Private Key, public key, all can be retrieved from account, when logged in)<br/>
+
+    </p>
+
+
+</section>
+
+<section id="paypal">
+    <h3>"PayPal Standard" Settings</h3>
+    <hr class="notop">
+
+    <p>
+        In order to enable paypal payments (website payments standard) you need to change Line 75 in config.php to TRUE. Other paypal settings below:
+        <br/>
+        <br/>
+        <strong>Line 85</strong> - PayPal payment method on/off switch.<br />
+        <strong>Line 86</strong> - PayPal merchant email.<br />
+        <strong>Line 87</strong> - PayPal success url - your customers will be taken to this page after successful paypal payment.<br />
+        <strong>Line 88</strong> - PayPal cancel url - your customers will be taken to this page if they decide not to pay through paypal.<br />
+        <strong>Line 89</strong> - PayPal ipn url - this is IPN listener file which will accept paypal responses about the payments and will notify you about new payments (if you want to update your db somehow - this is the file for paypal).<br />
+        <strong>Line 90</strong> - PayPal custom variable - you can pass any customer related variable here, serves for the purpose of updating database later in ipn listener file (optional).<br />
+        <strong>Line 91</strong> - PayPal currency.<br />
+        <strong>Line 92</strong> - PayPal Live/Sandbox mode switch. If set to true - paypal will run in TEST mode(you have to have paypal developers account and you must be logged in to developer.paypal.com)<br />
+        <br />
+        Other than the above - you don't need to edit any variables for PayPal.
+
+    </p>
+    <p>
+        <strong>PayPal Recurring Parameters (for paypal website payments standard recurring functionality, taken from paypal.com)</strong><br />
+    <table cellspacing="0" id="id08A6HI00JQU__id08A7C30G05Z" class="cleartable">    <thead>        <tr>            <th class="row-nocellborder" id="N116FE">            <p>Name </p>            </th>            <th class="row-nocellborder" id="N11709">            <p>Required or Optional </p>            </th>            <th class="row-nocellborder" id="N11714">            <p>Description </p>            </th>            <th class="row-nocellborder" id="N1171F">            <p>Character Length </p>            </th>        </tr>    </thead>    <tbody>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">business</samp> </p>            </td>            <td class="row-nocellborder">            <p>Required </p>            </td>            <td class="row-nocellborder">            <p>Your PayPal ID or an email address associated with your PayPal account. Email addresses must be confirmed. </p>            </td>            <td class="row-nocellborder">            <p> </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">item_name</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Description of item being sold. If you are collecting aggregate payments, the value can be a summary of all items purchased, a tracking number, or a generic term such as &ldquo;subscription.&rdquo; If this variable is omitted, buyers see a field in which they can enter the item name. </p>            </td>            <td class="row-nocellborder">            <p>127 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">currency_code</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>The currency of prices for trial periods and the subscription. The default is <samp class="codeph">USD</samp>. </p>            <p>For allowable values, see <a href="http://www.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_api_nvp_currency_codes" target="_self">Currencies Supported by PayPal</a>.</p>            </td>            <td class="row-nocellborder">            <p>3 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">a1</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Trial period 1 price. For a free trial period, specify <samp class="codeph">0</samp>.</p>            </td>            <td class="row-nocellborder">            <p> </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">p1</samp> </p>            </td>            <td class="row-nocellborder">            <p>See description. </p>            </td>            <td class="row-nocellborder">            <p>Trial period 1 duration. Required if you specify <samp class="codeph">a1</samp>. Specify an integer value in the allowable range for the units of duration that you specify with <samp class="codeph">t1</samp>. </p>            </td>            <td class="row-nocellborder">            <p>2 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">t1</samp> </p>            </td>            <td class="row-nocellborder">            <p>See description. </p>            </td>            <td class="row-nocellborder">            <p>Trial period 1 units of duration. Required if you specify <samp class="codeph">a1</samp>.</p>            <p>Allowable values are: </p>            <ul>                <li>                <p>
+    <samp class="codeph">D</samp> &ndash; for days; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">90</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">W</samp> &ndash; for weeks; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">52</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">M</samp> &ndash; for months; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">24</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">Y</samp> &ndash; for years; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to 5 </p>                </li>            </ul>            </td>            <td class="row-nocellborder">            <p>1</p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">a2</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Trial period 2 price. Can be specified only if you also specify <samp class="codeph">a1</samp>. </p>            </td>            <td class="row-nocellborder">            <p> </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">p2</samp> </p>            </td>            <td class="row-nocellborder">            <p>See description. </p>            </td>            <td class="row-nocellborder">            <p>Trial period 2 duration. Required if you specify <samp class="codeph">a2</samp>. Specify an integer value in the allowable range for the units of duration that you specify with <samp class="codeph">t2</samp>.</p>            </td>            <td class="row-nocellborder">            <p>2 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">t2</samp> </p>            </td>            <td class="row-nocellborder">            <p>See description. </p>            </td>            <td class="row-nocellborder">            <p>Trial period 2 units of duration. </p>            <p>Allowable values are: </p>            <ul>                <li>                <p>
+    <samp class="codeph">D</samp> &ndash; for days; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">90</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">W</samp> &ndash; for weeks; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">52</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">M</samp> &ndash; for months; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to <samp class="codeph">24</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">Y</samp> &ndash; for years; allowable range for <samp class="codeph">p2</samp> is <samp class="codeph">1</samp> to 5 </p>                </li>            </ul>            </td>            <td class="row-nocellborder">            <p>1</p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">a3</samp> </p>            </td>            <td class="row-nocellborder">            <p>Required </p>            </td>            <td class="row-nocellborder">            <p>Regular subscription price. </p>            </td>            <td class="row-nocellborder">            <p> </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">p3</samp> </p>            </td>            <td class="row-nocellborder">            <p>Required </p>            </td>            <td class="row-nocellborder">            <p>Subscription duration. Specify an integer value in the allowable range for the units of duration that you specify with <samp class="codeph">t3</samp>.</p>            </td>            <td class="row-nocellborder">            <p>2 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">t3</samp> </p>            </td>            <td class="row-nocellborder">            <p>Required </p>            </td>            <td class="row-nocellborder">            <p>Regular subscription units of duration. </p>            <p>Allowable values are: </p>            <ul>                <li>                <p>
+    <samp class="codeph">D</samp> &ndash; for days; allowable range for <samp class="codeph">p3</samp> is <samp class="codeph">1</samp> to <samp class="codeph">90</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">W</samp> &ndash; for weeks; allowable range for <samp class="codeph">p3</samp> is <samp class="codeph">1</samp> to <samp class="codeph">52</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">M</samp> &ndash; for months; allowable range for <samp class="codeph">p3</samp> is <samp class="codeph">1</samp> to <samp class="codeph">24</samp> </p>                </li>                <li>                <p>
+    <samp class="codeph">Y</samp> &ndash; for years; allowable range for <samp class="codeph">p3</samp> is <samp class="codeph">1</samp> to <samp class="codeph">5</samp>
+    </p>                </li>            </ul>            </td>            <td class="row-nocellborder">            <p>1 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">src</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Recurring payments. Subscription payments recur unless subscribers cancel their subscriptions before the end of the current billing cycle or you limit the number of times that payments recur with the value that you specify for <samp class="codeph">srt</samp>. </p>            <p>Allowable values are: </p>            <ul>                <li>                <p>0 &ndash; subscription payments do not recur </p>                </li>                <li>                <p>1 &ndash; subscription payments recur </p>                </li>            </ul>            <p>The default is 0. </p>            </td>            <td class="row-nocellborder">            <p>1 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">srt</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Recurring times. Number of times that subscription payments recur. Specify an integer with a minimum value of 1 and a maximum value of 52. Valid only if you specify <samp class="codeph">src="1"</samp>. </p>            </td>            <td class="row-nocellborder">            <p>1 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">sra</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Reattempt on failure. If a recurring payment fails, PayPal attempts to collect the payment two more times before canceling the subscription. </p>            <p>Allowable values are: </p>            <ul>                <li>                <p>0 &ndash; do not reattempt failed recurring payments</p>                </li>                <li>                <p>1 &ndash; reattempt failed recurring payments before canceling</p>                </li>            </ul>            <p>The default is 1. </p>            <p>For more information, see <a href="http://www.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_html_subscribe_buttons" target="_self">Reattempting Failed Recurring Payments with Subscribe Buttons</a>.</p>            </td>            <td class="row-nocellborder">            <p>1 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">no_note</samp> </p>            </td>            <td class="row-nocellborder">            <p>Required </p>            </td>            <td class="row-nocellborder">            <p>Do not prompt buyers to include a note with their payments. Allowable values for Subscribe buttons: </p>            <ul>                <li>                <p>1 &ndash; hide the text box and the prompt </p>                </li>            </ul>            <p>For Subscribe buttons, always include <samp class="codeph">no_note</samp> set to <samp class="codeph">1</samp>. )</p>            </td>            <td class="row-nocellborder">            <p>1 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">custom</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>User-defined field which PayPal passes through the system and returns to you in your merchant payment notification email. Subscribers do not see this field. </p>            </td>            <td class="row-nocellborder">            <p>255 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">invoice</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>User-defined field which must be unique with each subscription. The invoice number is shown to subscribers with the other details of their payments</p>            </td>            <td class="row-nocellborder">            <p>127 </p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">modify</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Modification behavior. </p>            <p>Allowable values are:</p>            <ul>                <li>                <p>
+    <samp class="codeph">0</samp> &ndash; allows subscribers only to sign up for new subscriptions </p>                </li>                <li>                <p>
+    <samp class="codeph">1</samp> &ndash; allows subscribers to sign up for new subscriptions and modify their current subscriptions </p>                </li>                <li>                <p>
+    <samp class="codeph">2</samp> &ndash; allows subscribers to modify only their current subscriptions </p>                </li>            </ul>            <p>The default value is <samp class="codeph">0</samp>. </p>            <p>For more information, see <a href="http://www.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_html_subscribe_buttons" target="_self">Working with Modify Subscription Buttons</a>.</p>            </td>            <td class="row-nocellborder">            <p>1</p>            </td>        </tr>        <tr>            <td class="row-nocellborder">            <p>
+    <samp class="codeph">usr_manage</samp> </p>            </td>            <td class="row-nocellborder">            <p>Optional </p>            </td>            <td class="row-nocellborder">            <p>Set to <samp class="codeph">1</samp> to have PayPal generate usernames and initial passwords for subscribers. </p>            <p>For more information, see <a href="http://www.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/e_howto_html_subscribe_buttons" target="_self">Generating Usernames and Passwords with Subscribe Buttons</a>.</p>            </td>            <td class="row-nocellborder">            <p>1</p>            </td>        </tr>    </tbody>
+    </table>
+    </p>
+
+
+</section>
+<section id="yourdb">
+    <h3>Connecting payment processing to your database</h3>
+    <hr class="notop">
+
+    <p>
+        In order to connect BrainTree payment terminal with your existing website database, to insert new orders or update
+        existing
+        upon successful payment you need to place your "update order" or "insert new order" code into following places:
+        <br/>
+        For regular payments (and non-recuring payments): includes/form.processing.php - between line 188 and line 190
+        <br/>
+        For recurring payments: includes/form.processing.php - between line 419 and 421
+        <br />
+        For paypal payments standard : paypal_listener.php - between line 61 and 63 <br/>
+    </p>
+
+
+</section>
+
+<section id="live">
+    <h3>Going LIVE (or switching to test mode)</h3>
+    <hr class="notop">
+    <p>
+        You need to set variable on line 63 in includes/config.php to TRUE to use LIVE MDOE and switch to FALSE to use
+        TEST MODE&nbsp;</p>
+
+    <p>For test purposes you can use 4111111111111111 VISA credit card with any cvv (3 numbers) and any future expiry
+        date. For other test cards please take a look here - https://www.braintreepayments.com/docs/php/reference/sandbox</p>
+    
+    <p>You will need to create paypal developer account in order to test the paypal in sandbox - please read more here: <a href="https://cms.paypal.com/ca/cgi-bin/?cmd=_render-content&content_ID=developer/howto_testing_sandbox" target="_blank">https://cms.paypal.com/ca/cgi-bin/?cmd=_render-content&content_ID=developer/howto_testing_sandbox</a></p>
+
+
+</section>
+
+
+
+
+
+<section id="need_support">
+    <h3>Need Support ?</h3>
+    <hr class="notop">
+    <p>
+        We are glad to provide courtesy support for all our products to our valued customers within 48 hours after
+        receiving request on our support forums. If you need any help regarding the installation of the script or any
+        other question please go to our support forum : <a href="http://support.convergine.com">http://support.convergine.com</a>
+        (please note that to read/write posts you will need to register on the forum. You will have to provide your
+        license key and CodeCanyon username during the registration process which will then be validated through
+        CodeCanyon API.).</p>
+
+    <p>
+        Please note that we do not provide support by direct emails anymore. Any email related to support and not
+        pre-sales question will be replied after any other support posts on forums will be resolved.</p>
+
+    <p>
+        More about our support policy and terms of service <a
+            href="http://www.convergine.com/envato_policy.html">here</a></p>
+</section>
+<section id="changelog">
+    <h3>Changelog</h3>
+    <hr class="notop">
+    <p>
+        <strong>v1.0 - 16 February 2013</strong><br />
+        - initial release<br />
+
+    </p>
+
+</section>
+<section id="sources_and_credits">
+    <h3>Sources and Credits</h3>
+    <hr class="notop">
+    <p>
+        We&#39;ve used the following images, icons or other files as listed.</p>
+    <ul>
+
+        <li>
+            jQuery UI Library - http://www.jqueryui.com
+        </li>
+        <li>
+            jQuery Library - http://www.jquery.com
+        </li>
+        <li>
+            jQuery Colorbox - http://www.jacklmoore.com/colorbox
+        </li>
+        <li>
+            jQuery Tools - http://jquerytools.org/
+        </li>
+
+    </ul>
+    <hr>
+    <p>
+        Once again, thank you so much for purchasing our product.&nbsp;</p>
+
+    <p>
+        <strong>Convergine.com Team</strong></p>
+</section>
+
+</div>
+</body>
+</html>

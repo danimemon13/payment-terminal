@@ -1,0 +1,1 @@
+[23-Nov-2015 23:48:00 America/Chicago] PHP Fatal error:  Class 'Braintree_ClientToken' not found in /home/octapay/public_html/pg/zip/braintree-payment-terminal/includes/test.php on line 11

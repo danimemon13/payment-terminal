@@ -1,0 +1,124 @@
+
+	
+	/**** MAIN STYLES ****/
+     body {font-size:16px;  font-family: Helvetica, Arial, sans-serif; color:#069; }
+     .wrapper {  padding:0; margin:0; }
+     h1 {font-size:18px;}
+    .pppro_footer { width:580px; margin:0 auto; text-align:right; padding-top:15px;}
+
+    .form_container h1 { font-size:32px; font-weight:bold;text-shadow: 1px 1px 0 white; text-align:left; width:580px; margin:0 auto; padding-bottom:20px; color:#262b8c; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; padding-top:30px;text-align:center;letter-spacing:7.5px;text-transform:uppercase;}
+    .clr { clear:both;}
+
+    /**** PROCESSING PAGE (REDIRECTION) ****/
+    .wait_msg { font-size:16px; }
+
+
+    /**** ACCORDIONS STYLING ****/
+    #accordion {width: 880px;border:1px solid #ddd; color:#000; background-color:#f0efef; border-radius: 5px;	}
+    /* accordion header */
+    #accordion h2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #34a853 none repeat scroll 0 0;
+    border-color: #fff #fff #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: normal;
+    height: 42px;
+    margin: 0;
+    padding: 10px 0 0 15px;
+    text-align: left;
+    }
+    /* currently active header */
+    #accordion h2.current {	cursor:default;background-color:#cd2b5c; border-radius: 4px 4px 0 0;}
+    /* accordion pane */
+    #accordion .pane {border:1px solid #fff; border-width:0 2px;  padding:15px;	 color:#000; font-size:12px; text-align:left;overflow:hidden}
+    .ui-widget { width:580px;}
+    .ui-widget .ui-state-error, .ui-widget .ui-state-error p, .ui-widget .ui-state-highlight, .ui-widget .ui-state-highlight p, .ui-widget .ui-state-info, .ui-widget .ui-state-info p { font-size:13px; text-align:left;}
+    .ui-widget .ui-state-info { padding-top: 10px !important; padding-bottom: 10px !important;}
+    /**** FORM STYLING ****/
+    .pppt_form label { float:left; width:140px; font-size:13px; text-align:left; padding:8px 5px 0 0;}
+    .pppt_form .long-field 
+    
+    
+    { background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    float: left;
+    height: 33px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    width: 80%;}
+
+
+
+
+    .pppt_form .long-field:hover { border:1px solid #CCC;}
+    .pppt_form .long-field:focus { border:1px solid #ff4530 ;}
+    
+    .pppt_form .small-field {  background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    float: left;
+    height: 33px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 122px;}
+    
+   
+
+.pppt_form .small-field {
+    width: 40%;
+}
+
+
+    .pppt_form .small-field:hover { border:1px solid #CCC;}
+    .pppt_form .small-field:focus {  border:1px solid #ff4530 ;}
+    .pppt_form .lft-field { float:left; margin-right:10px; margin-bottom:8px;}
+    .pppt_form .paypal { margin-top: 6px;}
+    .pppt_form .submit-btn { margin:0 auto; width:119px; margin-top:15px;}
+
+
+    /******* HINT STYLING ********/
+    .hint { width:450px; height:300px; background-color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; text-align:center; margin:0; padding:10px;}
+    .hint p { margin:10px 0 10px 0; text-align:center;}
+
+    .error { color:red; padding:3px 0 0 5px; font-weight: bold; display: inline-block;}
+    
+    
+    
+.form_container h1 img {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+.pppt_form .submit-btn input {
+    
+
+    color: #fff;
+    margin: 17px auto 0;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+.pppt_form .submit-btn {
+    left: 16%;
+    margin: 0px auto 26px;
+    position: relative;float:left;
+}
+
+
+.clr {
+    clear: both;
+}
+
+
+ 
